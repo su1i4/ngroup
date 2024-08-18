@@ -1,12 +1,14 @@
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import Companies from './Companies';
-import DetailCompanies from './DetailCompanies';
+import { View, Text } from 'react-native';
+
+import { Companies } from './Companies';
+import { DetailCompanies } from './DetailCompanies';
 
 const Stack = createNativeStackNavigator();
 
-export default function MainNavigation() {
+export const MainNavigation = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
