@@ -1,8 +1,10 @@
-import { View } from "react-native";
-import MainNavigation from "../pages";
+import {ScrollView} from 'react-native';
+import {MainNavigation} from '../pages';
 
-export default function Main(){
-    return (
-        <MainNavigation />
-    )
-}
+export const Main = () => {
+  return (
+    // <ScrollView>
+      <MainNavigation />
+    // </ScrollView>
+  );
+};
